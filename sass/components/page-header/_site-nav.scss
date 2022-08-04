@@ -1,0 +1,17 @@
+.site-nav__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.site-nav__link {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: center;
+    color: $title-text-color;
+    transition: color $transition;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}

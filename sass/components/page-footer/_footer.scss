@@ -1,0 +1,54 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $accent-background-color;
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+    gap: 70px;
+}
+
+.address{
+    font-style: inherit;
+    color: $footer-address-color;
+}
+
+.footer__item{
+    margin-bottom: 9px;
+}
+
+.footer__link {
+    color: $footer-address-color;
+    transition: color $transition;
+
+    &:hover,
+    &:focus{
+        color: $accent-color;
+    }
+}    
+    .footer__link--main{
+        color: $secondary-text-color;
+        transition: color $transition;
+
+            &:hover,
+            &:focus {
+                color: $accent-color;
+            }
+}
+
+.footer__icon {
+    fill: $secondary-text-color;
+}
+
+   
+.footer__slogan {
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.14;
+    color: $secondary-text-color;
+    text-transform: uppercase;
+}
+
+

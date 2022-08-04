@@ -1,0 +1,15 @@
+.current-link {
+    position: relative;
+    color: $accent-color;
+    
+    &::after {
+            position: absolute;
+            bottom: -1px;
+            display: block;
+            content: "";
+            width: 100%;
+            height: 4px;
+            border-radius: 2px;
+            background-color: $accent-color;
+        }
+}

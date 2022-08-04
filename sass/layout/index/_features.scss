@@ -1,0 +1,38 @@
+.feature__list{
+    --set-item:4;
+}
+
+
+.feature__icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    margin-bottom: var(--set-gap);
+    border-radius: 4px;
+    background-color: $secondary-background-color;
+    animation: changeBgcolor 2000ms infinite alternate-reverse cubic-bezier(0.4, 0, 0.2, 1) 1000ms;
+}
+
+@keyframes changeBgcolor {
+    0% {
+        background-color: $border-portfolio-color;
+    }
+
+    50% {
+        background-color: $icon-color;
+    }
+
+    100% {
+        background-color: $accent-color;
+    }
+}
+
+.feature__title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $title-text-color;
+}

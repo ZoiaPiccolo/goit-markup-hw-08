@@ -1,0 +1,46 @@
+.footer__form {
+    margin-left: auto;
+}
+
+.footer__input {
+    display: block;
+    padding: 15px;
+    min-width: 358px;
+    min-height: 50px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    background-color: transparent;
+    border-radius: 4px;
+    color: $secondary-text-color;
+
+    &::placeholder{
+        line-height: 1.25;
+        color: $footer-address-color;
+    }
+}
+
+.footer__form-field{
+    display: flex;
+    gap: 12px;
+}
+
+.footer__icon-send{
+    display: block;
+    margin-left: 10px;
+}
+
+.footer__btn{
+    animation: scale 1500ms infinite alternate-reverse cubic-bezier(0.4, 0, 0.2, 1) 1000ms;
+    }
+    
+    @keyframes scale {
+        0% {
+            transform: perspective(200px) scale(0.9);
+        }
+    
+        100% {
+            transform: perspective(200px) scale(1.1);
+        }
+    }
