@@ -1,25 +1,19 @@
-.filters__list{
-    display: flex;
-    margin-bottom: 50px;
-    justify-content: center;
-}
-
-.filters__item:not(:last-child) {
-    margin-right: 8px;
+.filters__list {
+     display: flex;
 }
 
 .filters__btn{
     padding: 6px 22px;
-        font-family: $main-font-family;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.6;
-        letter-spacing: 0.03em;
-        border: none;
-        border-radius: 4px;
-        background-color: $secondary-background-color;
-        color: $title-text-color;
-        cursor: pointer;
+    font-family: $main-font-family;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    border: none;
+    border-radius: 4px;
+    background-color: $secondary-background-color;
+    color: $title-text-color;
+    cursor: pointer;
     
         transition: box-shadow $transition,
             background-color $transition,
@@ -33,4 +27,36 @@
                     background-color: $accent-color;
                     color: $secondary-text-color;
                 }
+}
+
+ @media screen and (max-width: 767px) {
+    .filters__list{
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    }
+     
+ }
+
+@media screen and (max-width: 767px) {
+    .filters__item:nth-child(3){
+        // але коли я прибираю цей марджин на смарті стає все добре
+       margin-right: 124px; 
+    }
+    .filters__item:nth-last-child(-n+2) {
+       margin-top: 15px;
+    }
+}
+
+@media screen and (min-width: $tab){
+    .filters__list {
+        justify-content: center;
+        gap: 8px;
+        margin-bottom: $set-gap;
+    }
+}
+
+@media screen and (min-width: $desk) {
+    .filters__list {
+        margin-bottom: 50px;
+    }
 }

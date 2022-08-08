@@ -1,5 +1,18 @@
 .work {
     padding-top: 0;
+
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+}
+@media screen and (min-width: $desk){
+    .work__list {
+        @include flex-set(30px);
+
+        .work__item{
+            @include flex-basis(3);
+        }
+    }
 }
 
 .work__thumb {

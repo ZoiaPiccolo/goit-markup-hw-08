@@ -1,8 +1,6 @@
 .logo {
     font-family: $logo-font-family;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
     letter-spacing: 0.03em;
     color: $accent-color;
 
@@ -16,11 +14,65 @@
     
 }
 
-.header__logo{
-    margin-right: 93px;
+.footer__logo {
+    // display: flex;
+    display: block;
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
 }
 
-.footer__logo{
-    display: flex;
-    margin-bottom: 20px;
+.header__logo {
+    @media screen and (max-width: 767px){
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
 }
+
+.header__logo {
+    @media screen and (min-width: 768px) {
+        margin-right: 88px;
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+}
+
+ @media screen and (max-width: 1199px) {
+    .header__logo {
+        font-size: 24px;
+        line-height: calc(28 / 24);
+    }
+ }
+
+ @media screen and (min-width: 768px){
+    .footer__logo {
+         padding-left: 100px;
+    }
+ }
+
+ @media screen and (min-width: 1200px){
+    .logo{
+        font-size: 26px;
+        line-height: 1.19;
+    }
+    .header__logo{
+        padding-top: 24px;
+        padding-bottom: 25px;
+        margin-right: 93px;
+    }
+ }
+
+ @media screen and (min-width: 1200px){
+    .footer__logo {
+        padding: 0;
+    }
+ }
+
+
+
+
+

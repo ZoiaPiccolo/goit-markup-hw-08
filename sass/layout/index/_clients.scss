@@ -1,10 +1,3 @@
-
-.clients__list {
-   --set-item:6;
-}
-
-
-
 .clients__link {
     display: flex;
     height: 92px;
@@ -30,3 +23,32 @@
 .clients__icon {
     fill: currentColor;
 }
+
+@media screen and (max-width: 767px) {
+    .clients__list {
+        @include flex-set (30px);
+    }   
+        .clients__item {
+        @include flex-basis (2);
+    }
+        
+}
+
+ @media screen and (min-width: $tab) {
+    .clients__list {
+        @include flex-set (30px);
+    }
+        .clients__item {
+            @include flex-basis (3);
+        }
+    }
+
+    @media screen and (min-width: $desk){
+        .clients__list {
+            @include flex-set(30px);
+        }
+        .clients__item {
+            @include flex-basis(6);
+        }
+    }
+ 

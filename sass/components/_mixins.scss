@@ -1,0 +1,29 @@
+@mixin flex-set ($set-gap: 30px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $set-gap;
+}
+
+@mixin flex-basis ($set-item) {
+    // flex-basis: calc((100% - $set-gap * ($set-item - 1)) / $set-item);
+    flex-basis: calc((100% - #{$set-gap} * (#{$set-item} - 1)) / #{$set-item});
+}
+
+// @mixin mq($range) {
+//     $mob: 480px;
+//     $tab: 768px;
+//     $desk: 1200px;
+//     @if $range == mob {
+//         @media screen and (min-width: $mob) {
+//             @content;
+//         }
+//    } @else if $range == tab {
+//         @media screen and (min-width: $tab){
+//             @content;
+//         }
+//     } @else if $range == desk {
+//         @media screen and (min-width: $desk) {
+//             @content;
+//         }
+//     }
+// }

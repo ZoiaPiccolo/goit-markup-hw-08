@@ -1,0 +1,28 @@
+.header__social-list {
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .social-list {
+        position: absolute;
+        left: 50px;
+        bottom: 48px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-size: 18px;
+        line-height: calc(22 / 18);
+        color: $accent-color;
+
+        &__item:not(:first-child) {
+            padding-left: 10px;
+            border-left-width: 1px;
+            border-left-style: solid;
+            border-left-color: rgba(33, 33, 33, 0.2);
+            ;
+        }
+    }
+}

@@ -75,6 +75,46 @@
     }
 }
 
+@media screen and (max-width: 767px) {
+    .portfolio__list{
+        display: flex;
+        flex-direction: column;
+        gap: $set-gap;
+    }
+
+    .portfolio__title{
+        font-size: 18px;
+        line-height: calc(36 / 18);
+    }
+
+    .portfolio__text{
+        padding: 77px 24px;
+    }
+}
+
+@media screen and (min-width: $tab) {
+    .portfolio__list{
+        @include flex-set(30px);
+    }
+
+    .portfolio__item{
+        @include flex-basis(2);
+    }
+
+    .portfolio__text{
+        padding: 49px 24px 77px 24px;
+    }
+}
+
+@media screen and (min-width: $desk) {
+    .portfolio__list{
+        @include flex-set(30px);
+    }
+    .portfolio__item{
+        @include flex-basis(3);
+    }
+}
+
 
 
 

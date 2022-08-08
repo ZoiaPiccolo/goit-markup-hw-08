@@ -9,6 +9,19 @@
     transition: opacity $transition, visibility $transition;
 } 
 
+@media screen and (max-width: 767px) {
+    .backdrop {
+        padding: 94px 15px;
+        overflow-y: scroll;
+    }
+}
+
+@media screen and (min-width: $tab) {
+    .backdrop {
+    overflow-y: scroll;
+    }
+}
+
 .backdrop.is-hidden {
     opacity: 0;
     visibility: hidden;

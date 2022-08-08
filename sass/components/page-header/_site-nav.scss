@@ -1,17 +1,56 @@
-.site-nav__item:not(:last-child) {
-    margin-right: 50px;
+
+
+.menu {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
 }
 
+.site-nav__item{
+    @media screen and (max-width: 767px) {
+            font-size: 40px;
+            line-height: 1.17;
+            &:not(:last-child){
+                margin-bottom: 32px;
+            }
+        }
+    }
+
 .site-nav__link {
-    display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    align-items: center;
     color: $title-text-color;
     transition: color $transition;
 
     &:hover,
     &:focus {
         color: $accent-color;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .site-nav{
+       margin-bottom: 306px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .site-nav{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        font-size: 14px;
+        line-height: calc(16 / 14);
+
+       &__link{
+        display: flex;
+        padding-top: 32px;
+        padding-bottom: 32px;
+       }
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .site-nav__link {
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
 }
