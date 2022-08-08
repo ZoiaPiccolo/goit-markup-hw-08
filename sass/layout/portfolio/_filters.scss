@@ -1,5 +1,7 @@
 .filters__list {
+    @extend %list;
      display: flex;
+     gap: 8px;
 }
 
 .filters__btn{
@@ -29,15 +31,16 @@
                 }
 }
 
- @media screen and (max-width: 767px) {
+ @media screen and (max-width: $mob-only) {
     .filters__list{
     flex-wrap: wrap;
     margin-bottom: 40px;
+   
     }
      
  }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $mob-only) {
     .filters__item:nth-child(3){
         // але коли я прибираю цей марджин на смарті стає все добре
        margin-right: 124px; 

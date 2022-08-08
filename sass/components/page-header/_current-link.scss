@@ -1,9 +1,10 @@
 .current-link {
+    @extend %link;
     position: relative;
     color: $accent-color;
     
     &::after {
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: $mob-only) {
                 display: none;
             }
             position: absolute;

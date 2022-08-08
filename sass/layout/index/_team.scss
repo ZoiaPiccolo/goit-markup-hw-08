@@ -1,3 +1,7 @@
+.team__list{
+    @extend %list;
+}
+
 .team {
     background-color: $secondary-background-color;
 }
@@ -38,7 +42,7 @@
     margin-bottom: 16px;
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: $mob-only){
     .team__list {
         display: flex;
         flex-direction: column;

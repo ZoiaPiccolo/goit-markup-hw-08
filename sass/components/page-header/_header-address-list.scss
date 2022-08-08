@@ -1,4 +1,9 @@
+.address-list{
+    @extend %list;
+}
+
 .address-list__link{
+    @extend %link;
     color: $main-text-color;
     fill: currentColor;
     transition: color $transition;
@@ -9,7 +14,7 @@
     }
 }
 
- @media screen and (max-width: 767px) {
+ @media screen and (max-width: $mob-only) {
     .address-list__icon {
         display: none;
     }

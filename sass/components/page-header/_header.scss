@@ -5,11 +5,15 @@
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: $line-color;
-    
-    // line-height: 1.14;
 }
 
 .header-box {
      display: flex;
      align-items: center;
+}
+
+@media screen and (min-width: $desk) {
+    .header{
+        line-height: 1.14;
+    }
 }

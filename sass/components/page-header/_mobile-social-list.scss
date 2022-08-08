@@ -1,12 +1,23 @@
+.social-list{
+    @extend %list;
+
+    &__link{
+        @extend %link;
+        color: $accent-color;
+    }
+}
+
+
 .header__social-list {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tab) {
         display: none;
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $mob-only) {
 
     .social-list {
+       
         position: absolute;
         left: 50px;
         bottom: 48px;
@@ -22,7 +33,8 @@
             border-left-width: 1px;
             border-left-style: solid;
             border-left-color: rgba(33, 33, 33, 0.2);
-            ;
+            
         }
+       
     }
 }

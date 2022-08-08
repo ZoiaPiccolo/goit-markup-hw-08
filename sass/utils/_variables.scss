@@ -11,6 +11,8 @@
  $line-color: #ECECEC;
  $border-portfolio-color: #EEEEEE;
  $icon-color: #AFB1B8;
+ $backdrop-background:  rgba(0, 0, 0, 0.2);
+ $hero-gradient: rgba(47, 48, 58, 0.4);
 
 
 // FONTS
@@ -26,8 +28,8 @@ $main-font-family: Roboto, sans serif;
  $set-item: 1;
 
 //  BREAKPOINTS
-
   $mob: 480px;
+  $mob-only: 767px;
   $tab: 768px;
   $desk: 1200px;
 

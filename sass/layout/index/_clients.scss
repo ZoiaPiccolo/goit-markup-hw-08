@@ -1,4 +1,9 @@
+.clients__list{
+    @extend %list;
+}
+
 .clients__link {
+    @extend %link;
     display: flex;
     height: 92px;
     justify-content: center;
@@ -24,7 +29,7 @@
     fill: currentColor;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $mob-only) {
     .clients__list {
         @include flex-set (30px);
     }   

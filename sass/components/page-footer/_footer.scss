@@ -9,7 +9,12 @@
     color: $footer-address-color;
 }
 
+.footer__list{
+    @extend %list;
+}
+
 .footer__link {
+    @extend %link;
     color: $footer-address-color;
     transition: color $transition;
 
@@ -19,6 +24,7 @@
     }
 }    
     .footer__link--main{
+        @extend %link;
         color: $secondary-text-color;
         transition: color $transition;
 
@@ -41,10 +47,14 @@
     text-transform: uppercase;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $mob-only) {
     .footer__list {
         text-align: center;
     }
+
+   .footer__slogan{
+    margin-top: 60px;
+   }
 }
 
 @media screen and (max-width: 1199px){
