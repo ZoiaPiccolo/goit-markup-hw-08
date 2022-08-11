@@ -14,7 +14,7 @@
     }
 }
 
- @media screen and (max-width: $mob-only) {
+ @include mq(mob-only) {
     .address-list__icon {
         display: none;
     }
@@ -36,7 +36,7 @@
         
 }
 
-        @media screen and (min-width: $tab) and (max-width: 1199px){
+        @include mq(tab-only){
     .address-list{
     margin-left: auto;
     font-size: 12px;
@@ -57,7 +57,7 @@
 
 
 
-@media screen and (min-width: $desk) {
+@include mq(desk) {
     .address-list {
         display: flex;
         gap: 30px;

@@ -5,17 +5,27 @@
     margin-left: auto;
     margin-right: auto;
 
-   
-   
-    @media screen and (min-width: $mob){
-     width: 480px;
-   }
+  @include mq(mob){
+    width: 480px;
+  }
 
-    @media screen and (min-width: $tab) {
+   @include mq(tab){
     width: 768px;
    }
 
-   @media screen and (min-width: $desk) {
+   @include mq(desk){
     width: 1200px;
-    }
+   }
+   
+  //   @media screen and (min-width: $mob){
+  //    width: 480px;
+  //  }
+
+  //   @media screen and (min-width: $tab) {
+  //   width: 768px;
+  //  }
+
+  //  @media screen and (min-width: $desk) {
+  //   width: 1200px;
+  //   }
 }

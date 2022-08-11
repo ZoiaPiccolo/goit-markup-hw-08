@@ -14,7 +14,7 @@
     color: $title-text-color;
 }
 
- @media screen and (min-width: $desk) {
+ @include mq(desk) {
     .section{
          padding-top: 94px;
          padding-bottom: 94px;

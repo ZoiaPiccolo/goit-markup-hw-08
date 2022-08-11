@@ -40,7 +40,7 @@
 
    
 
-@media screen and  (max-width: 1199px){
+@include mq(noDesk){
     .footer__input{ 
         max-width: 450px;
         margin-left: auto;
@@ -49,7 +49,7 @@
     }
 }
 
-@media screen and (min-width: $desk){
+@include mq(desk){
     
     .footer__input{
     min-width: 358px;

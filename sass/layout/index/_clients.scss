@@ -29,7 +29,7 @@
     fill: currentColor;
 }
 
-@media screen and (max-width: $mob-only) {
+@include mq(mob-only) {
     .clients__list {
         @include flex-set (30px);
     }   
@@ -39,7 +39,7 @@
         
 }
 
- @media screen and (min-width: $tab) {
+ @include mq(tab) {
     .clients__list {
         @include flex-set (30px);
     }
@@ -48,7 +48,7 @@
         }
     }
 
-    @media screen and (min-width: $desk){
+    @include mq(desk){
         .clients__list {
             @include flex-set(30px);
         }

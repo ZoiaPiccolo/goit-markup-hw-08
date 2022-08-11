@@ -9,12 +9,12 @@
 
 
 .header__social-list {
-    @media screen and (min-width: $tab) {
+    @include mq(tab) {
         display: none;
     }
 }
 
-@media screen and (max-width: $mob-only) {
+@include mq(mob-only) {
 
     .social-list {
        
@@ -27,13 +27,14 @@
         line-height: calc(22 / 18);
         color: $accent-color;
 
-        &__item:not(:first-child) {
-            padding-left: 10px;
-            border-left-width: 1px;
-            border-left-style: solid;
-            border-left-color: rgba(33, 33, 33, 0.2);
+        &__item:not(:last-child) {
+            padding-right: 10px;
+            border-right-width: 1px;
+            border-right-style: solid;
+            border-right-color: rgba(33, 33, 33, 0.2);
             
         }
        
     }
+    
 }

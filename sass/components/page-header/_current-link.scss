@@ -14,7 +14,7 @@
             background-color: $accent-color;
         }
 }
-@media screen and (max-width: $mob-only){
+@include mq(mob-only){
     .current-link::after{
     display: none;
     }

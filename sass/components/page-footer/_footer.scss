@@ -1,5 +1,4 @@
 .footer {
-   
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: $accent-background-color;
@@ -47,20 +46,20 @@
     color: $secondary-text-color;
     text-transform: uppercase;
 }
- @media screen and (max-width: 1199px){
+ @include mq(noDesk){
     .footer__content {
             text-align: center;
         }
  }
 
 
-@media screen and (max-width: $mob-only) {
+@include mq(mob-only) {
    .footer__content{
     margin-bottom: 60px;
    }
 }
 
-@media screen and (max-width: 1199px){
+@include mq(noDesk){
     
 
     .footer__item:not(:last-child){
@@ -75,15 +74,15 @@
     }
 
 
-@media screen and (min-width: $tab) and (max-width: 1199px){
+@include mq(tab-only){
     .footer__menu {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         gap: 165px;
        }
     }
 
- @media screen and (min-width: $tab) and (max-width: 1199px){
+ @include mq(tab-only){
     .footer-container{
         display: flex;
         flex-direction: column;
@@ -95,11 +94,11 @@
     
 
 
-@media screen and (min-width: $desk) {
+@include mq(desk) {
     .footer-container {
         display: flex;
         align-items: baseline;
-        width: 100%;
+       
         }
 
         .footer__menu{

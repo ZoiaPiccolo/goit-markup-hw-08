@@ -10,13 +10,13 @@
     transition: opacity $transition, visibility $transition;
 } 
 
-@media screen and (max-width: $mob-only) {
+@include mq(mob-only) {
     .backdrop {
         overflow-y: scroll;
     }
 }
 
-@media screen and (min-width: $tab) {
+@include mq(tab) {
     .backdrop {
     overflow-y: scroll;
     }

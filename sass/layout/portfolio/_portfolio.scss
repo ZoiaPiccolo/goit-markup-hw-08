@@ -82,7 +82,7 @@
     }
 }
 
-@media screen and (max-width: $mob-only) {
+@include mq(mob-only) {
     .portfolio__list{
         display: flex;
         flex-direction: column;
@@ -99,7 +99,7 @@
     }
 }
 
-@media screen and (min-width: $tab) {
+@include mq(tab) {
     .portfolio__list{
         @include flex-set(30px);
     }
@@ -113,7 +113,7 @@
     }
 }
 
-@media screen and (min-width: $desk) {
+@include mq(desk) {
     .portfolio__list{
         @include flex-set(30px);
     }

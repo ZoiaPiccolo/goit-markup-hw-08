@@ -42,7 +42,7 @@
     margin-bottom: 16px;
 }
 
-@media screen and (max-width: $mob-only){
+@include mq(mob-only){
     .team__list {
         display: flex;
         flex-direction: column;
@@ -50,7 +50,7 @@
     }
 }
 
-@media screen and (min-width: $tab){
+@include mq(tab){
     .team__list{
         @include flex-set(30px);
     }
@@ -59,7 +59,7 @@
     }
 }
 
-@media screen and (min-width: $desk){
+@include mq(desk){
     .team__list {
         @include flex-set(30px);
     }

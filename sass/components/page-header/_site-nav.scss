@@ -6,13 +6,13 @@
     @extend %list;
 }
 .menu {
-    @media screen and (max-width: $mob-only) {
+    @include mq(mob-only) {
         display: none;
     }
 }
 
 .site-nav{
-    @media screen and (max-width: $mob-only) {
+    @include mq(mob-only) {
       display: flex;
       flex-direction: column;
       gap: 32px;
@@ -38,7 +38,7 @@
 
 
 
-@media screen and (min-width: $tab) {
+@include mq(tab) {
     .site-nav{
         display: flex;
         align-items: center;

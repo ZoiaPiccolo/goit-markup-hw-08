@@ -5,11 +5,11 @@
 .work {
     padding-top: 0;
 
-    @media screen and (max-width: 1199px) {
+    @include mq(noDesk) {
         display: none;
     }
 }
-@media screen and (min-width: $desk){
+@include mq(desk){
     .work__list {
         @include flex-set(30px);
 
