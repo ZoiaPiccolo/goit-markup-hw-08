@@ -24,9 +24,9 @@
         <div class="container header-box">
             <a href="./index.html" class="logo header__logo">Web<span class="logo logo--black">Studio</span></a>
 <button type="button" class="menu-button" aria-expanded="false" data-menu-button>
-    <svg class="menu-icon" aria-label="Перемикач мобільного меню" aria-controls="mobile-menu">
-        <use width="24" height="16" class="icon-menu" href="./images/icons.svg#icon-menu"></use>
-        <use width="19" height="19" class="icon-cross" href="./images/icons.svg#icon-cross"></use>
+    <svg width="24"height="16" class="menu-icon" aria-label="Перемикач мобільного меню" aria-controls="mobile-menu">
+        <use  class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+        <use  class="icon-cross" href="./images/icons.svg#icon-cross"></use>
     </svg>
 </button>
 <div class="mobile-menu" id="mobile-menu" data-menu>
@@ -38,6 +38,7 @@
                     <li class="site-nav__item"><a href="./contacts.html" class="site-nav__link">Контакти</a></li>
                 </ul>
             </nav>
+            <div class="menu-bottom">
             <ul class="address-list">
                 <li class="address-list__item"><a href="mailto:info@devstudio.com" class="address-list__link">
                         <svg class="address-list__icon" width="16" height="12">
@@ -62,6 +63,7 @@
                 <li class="social-list__item"><a href="" target="_blank" rel="noreferre noopener" class="social-list__link">
                         <span class="social-list__descr">LinkedIn</span></a></li>
             </ul>
+            </div>
             </div>
             <div class="menu header-box">
             <nav>
@@ -109,28 +111,26 @@
                         <a class="portfolio__link" href="" target="_blank" rel="noopener noreferrer">
                             <div class="portfolio__thumb">
                                 <picture>
-                                    <source srcset="./images/mobileimg/people1x.webp 450w,
-                                    ./images/mobileimg/people2x.webp 900w,
-                                    ./images/mobileimg/people3x.webp 1350w,
-                                    ./images/tabletimg/people1x.webp 354w,
-                                    ./images/tabletimg/people2x.webp 708w,
-                                    ./images/tabletimg/people3x.webp 1062w,
-                                    ./images/desktopimg/people1x.webp 370w,
-                                    ./images/desktopimg/people2x.webp 740w,
-                                    ./images/desktopimg/people3x.webp 1110w"
-                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw" type="img/webp">
-                                    <source srcset="./images/mobileimg/people1x.jpg 450w,
-                                    ./images/mobileimg/people2x.jpg 900w,
-                                    ./images/mobileimg/people3x.jpg 1350w,
-                                    ./images/tabletimg/people1x.jpg 354w,
-                                    ./images/tabletimg/people2x.jpg 708w,
-                                    ./images/tabletimg/people3x.jpg 1062w,
-                                    ./images/desktopimg/people1x.jpg 370w,
-                                    ./images/desktopimg/people2x.jpg 740w,
-                                    ./images/desktopimg/people3x.jpg 1110w" 
-                                     sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw" type="img/jpg">
-                                <img 
-                                src="./images/people.jpg" alt="команда веб-сайта"/></picture>
+            <source srcset="./images/mobileimg/people1x.webp 450w,
+                            ./images/mobileimg/people2x.webp 900w,
+                            ./images/mobileimg/people3x.webp 1350w" sizes="(max-width: 767px) 450px, 100vw"  type="image/webp">
+            <source srcset="./images/mobileimg/people1x.jpg 450w,
+                            ./images/mobileimg/people2x.jpg 900w,
+                            ./images/mobileimg/people3x.jpg 1350w" sizes="(max-width: 767px) 450px, 100vw" type="image/jpeg">
+            <source srcset="./images/tabletimg/people1x.webp 354w,
+                            ./images/tabletimg/people2x.webp 708w,
+                            ./images/tabletimg/people3x.webp 1062w" sizes="(min-width: 768px) 354px" type="image/webp">
+            <source srcset="./images/tabletimg/people1x.jpg 354w,
+                            ./images/tabletimg/people2x.jpg 708w,
+                            ./images/tabletimg/people3x.jpg 1062w" sizes="(min-width: 768px) 354px" type="image/jpeg">
+            <source srcset="./images/desktopimg/people1x.webp 370w,
+                            ./images/desktopimg/people2x.webp 740w,
+                            ./images/desktopimg/people3x.webp 1110w" sizes="(min-width: 1200px) 370px" type="image/webp">
+            <source srcset="./images/desktopimg/people1x.jpg 370w,
+                            ./images/desktopimg/people2x.jpg 740w,
+                            ./images/desktopimg/people3x.jpg 1110w" sizes="(min-width: 1200px) 370px" type="image/jpeg">
+                                <img src="./images/people.jpg" alt="команда веб-сайта"/>
+                            </picture>
                                 <div class="portfolio__overlay">
                                     <p class="portfolio__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
@@ -149,27 +149,32 @@
                         <a class="portfolio__link" href="" target="_blank" rel="noopener noreferrer">
                             <div class="portfolio__thumb">
                                 <picture>
-                                <source srcset="./images/mobileimg/ball1x.webp 450w,
-                                                ./images/mobileimg/ball2x.webp 900w,
-                                                ./images/mobileimg/ball3x.webp 1350w,
-                                                ./images/tabletimg/ball1x.webp 354w,
-                                                ./images/tabletimg/ball2x.webp 708w,
-                                                ./images/tabletimg/ball3x.webp 1062w,
-                                                ./images/desktopimg/ball1x.webp 370w,
-                                                ./images/desktopimg/ball2x.webp 740w,
-                                                 ./images/desktopimg/ball3x.webp 1110w"
-                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw" type="img/webp">
-                                <source srcset="./images/mobileimg/ball1x.jpg 450w,
-                                                 ./images/mobileimg/ball2x.jpg 900w,
-                                                 ./images/mobileimg/ball3x.jpg 1350w,
-                                                ./images/tabletimg/ball1x.jpg 354w,
-                                                ./images/tabletimg/ball2x.jpg 708w,
-                                                ./images/tabletimg/ball3x.jpg 1062w,
-                                                ./images/desktopimg/ball1x.jpg 370w,
-                                                ./images/desktopimg/ball2x.jpg 740w,
-                                                ./images/desktopimg/ball3x.jpg 1110w"
-                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw" type="img/jpg">
-                                <img src="./images/ball.jpg" alt="пара футболистов" /></picture>
+                            <source srcset="./images/mobileimg/ball1x.webp 450w,
+                                            ./images/mobileimg/ball2x.webp 900w,
+                                            ./images/mobileimg/ball3x.webp 1350w" sizes="(max-width: 767px) 450px, 100vw"
+                                type="image/webp">
+                            <source srcset="./images/mobileimg/ball1x.jpg 450w,
+                                            ./images/mobileimg/ball2x.jpg 900w,
+                                            ./images/mobileimg/ball3x.jpg 1350w" sizes="(max-width: 767px) 450px, 100vw"
+                                type="image/jpeg">
+                            <source srcset="./images/tabletimg/ball1x.webp 354w,
+                                            ./images/tabletimg/ball2x.webp 708w,
+                                            ./images/tabletimg/ball3x.webp 1062w" sizes="(min-width: 768px) 354px" type="image/webp">
+                            <source srcset="./images/tabletimg/ball1x.jpg 354w,
+                                            ./images/tabletimg/ball2x.jpg 708w,
+                                            ./images/tabletimg/ball3x.jpg 1062w" sizes="(min-width: 768px) 354px" type="image/jpeg">
+                            <source srcset="./images/desktopimg/ball1x.webp 370w,
+                                            ./images/desktopimg/ball2x.webp 740w,
+                                            ./images/desktopimg/ball3x.webp 1110w" sizes="(min-width: 1200px) 370px"
+                                type="image/webp">
+                            <source srcset="./images/desktopimg/ball1x.jpg 370w,
+                                            ./images/desktopimg/ball2x.jpg 740w,
+                                            ./images/desktopimg/ball3x.jpg 1110w" sizes="(min-width: 1200px) 370px"
+                                type="image/jpeg">
+
+                               
+                                <img src="./images/ball.jpg" alt="пара футболистов" />
+                            </picture>
                                 <div class="portfolio__overlay">
                                     <p class="portfolio__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
@@ -188,27 +193,34 @@
                         <a class="portfolio__link" href="" target="_blank" rel="noopener noreferrer">
                             <div class="portfolio__thumb">
                                 <picture>
-                                    <source srcset="./images/mobileimg/seafood1x.webp 450w,
-                                                    ./images/mobileimg/seafood2x.webp 900w,
-                                                    ./images/mobileimg/seafood3x.webp 1350w,
-                                                    ./images/tabletimg/seafood1x.webp 354w,
-                                                    ./images/tabletimg/seafood2x.webp 708w,
-                                                    ./images/tabletimg/seafood3x.webp 1062w,
-                                                    ./images/desktopimg/seafood1x.webp 370w,
-                                                    ./images/desktopimg/seafood2x.webp 740w,
-                                                    ./images/desktopimg/seafood3x.webp 1110w"
-                                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw" type="img/webp">
-                                    <source srcset="./images/mobileimg/seafood1x.jpg 450w,
-                                                     ./images/mobileimg/seafood2x.jpg 900w,
-                                                    ./images/mobileimg/seafood3x.jpg 1350w,
-                                                    ./images/tabletimg/seafood1x.jpg 354w,
-                                                    ./images/tabletimg/seafood2x.jpg 708w,
-                                                    ./images/tabletimg/seafood3x.jpg 1062w,
-                                                    ./images/desktopimg/seafood1x.jpg 370w,
-                                                    ./images/desktopimg/seafood2x.jpg 740w,
-                                                    ./images/desktopimg/seafood3x.jpg 1110w"
-                                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw" type="img/jpg">
-                                <img src="./images/seafood.jpg" alt="приложение ресторана" /></picture>
+                                <source srcset="./images/mobileimg/seafood1x.webp 450w,
+                                                ./images/mobileimg/seafood2x.webp 900w,
+                                                ./images/mobileimg/seafood3x.webp 1350w"
+                                    sizes="(max-width: 767px) 450px, 100vw" type="image/webp">
+                                <source srcset="./images/mobileimg/seafood1x.jpg 450w,
+                                                ./images/mobileimg/seafood2x.jpg 900w,
+                                                ./images/mobileimg/seafood3x.jpg 1350w"
+                                    sizes="(max-width: 767px) 450px, 100vw" type="image/jpeg">
+                                <source srcset="./images/tabletimg/seafood1x.webp 354w,
+                                                ./images/tabletimg/seafood2x.webp 708w,
+                                                ./images/tabletimg/seafood3x.webp 1062w" sizes="(min-width: 768px) 354px"
+                                    type="image/webp">
+                                <source srcset="./images/tabletimg/seafood1x.jpg 354w,
+                                                ./images/tabletimg/seafood2x.jpg 708w,
+                                                ./images/tabletimg/seafood3x.jpg 1062w" sizes="(min-width: 768px) 354px"
+                                    type="image/jpeg">
+                                <source srcset="./images/desktopimg/seafood1x.webp 370w,
+                                                ./images/desktopimg/seafood2x.webp 740w,
+                                                ./images/desktopimg/seafood3x.webp 1110w" sizes="(min-width: 1200px) 370px"
+                                    type="image/webp">
+                                <source srcset="./images/desktopimg/seafood1x.jpg 370w,
+                                                ./images/desktopimg/seafood2x.jpg 740w,
+                                                ./images/desktopimg/seafood3x.jpg 1110w" sizes="(min-width: 1200px) 370px"
+                                    type="image/jpeg">
+  
+                                   
+                                <img src="./images/seafood.jpg" alt="приложение ресторана" />
+                            </picture>
                                 <div class="portfolio__overlay">
                                     <p class="portfolio__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
@@ -226,27 +238,33 @@
                         <a class="portfolio__link" href="" target="_blank" rel="noopener noreferrer">
                             <div class="portfolio__thumb">
                                 <picture>
-                                <source srcset="./images/mobileimg/headphones1x.webp 450w,
-                                                ./images/mobileimg/headphones2x.webp 900w,
-                                                ./images/mobileimg/headphones3x.webp 1350w,
-                                                ./images/tabletimg/headphones1x.webp 354w,
-                                                ./images/tabletimg/headphones2x.webp 708w,
-                                                ./images/tabletimg/headphones3x.webp 1062w,
-                                                ./images/desktopimg/headphones1x.webp 370w,
-                                                ./images/desktopimg/headphones2x.webp 740w,
-                                                ./images/desktopimg/headphones3x.webp 1110w"
-                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw" type="img/webp">
-                                <source srcset="./images/mobileimg/headphones1x.jpg 450w,
-                                                ./images/mobileimg/headphones2x.jpg 900w,
-                                                ./images/mobileimg/headphones3x.jpg 1350w,
-                                                ./images/tabletimg/headphones1x.jpg 354w,
-                                                ./images/tabletimg/headphones2x.jpg 708w,
-                                                 ./images/tabletimg/headphones3x.jpg 1062w,
-                                                ./images/desktopimg/headphones1x.jpg 370w,
-                                                ./images/desktopimg/headphones2x.jpg 740w,
-                                                ./images/desktopimg/headphones3x.jpg 1110w"
-                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw" type="img/jpg">
-                                <img src="./images/headphones.jpg" alt="наушники"/></picture>
+                                    <source srcset="./images/mobileimg/headphones1x.webp 450w,
+                                                    ./images/mobileimg/headphones2x.webp 900w,
+                                                    ./images/mobileimg/headphones3x.webp 1350w"
+                                        sizes="(max-width: 767px) 450px, 100vw" type="image/webp">
+                                    <source srcset="./images/mobileimg/headphones1x.jpg 450w,
+                                                    ./images/mobileimg/headphones2x.jpg 900w,
+                                                    ./images/mobileimg/headphones3x.jpg 1350w"
+                                        sizes="(max-width: 767px) 450px, 100vw" type="image/jpeg">
+                                    <source srcset="./images/tabletimg/headphones1x.webp 354w,
+                                                    ./images/tabletimg/headphones2x.webp 708w,
+                                                    ./images/tabletimg/headphones3x.webp 1062w"
+                                        sizes="(min-width: 768px) 354px" type="image/webp">
+                                    <source srcset="./images/tabletimg/headphones1x.jpg 354w,
+                                                    ./images/tabletimg/headphones2x.jpg 708w,
+                                                    ./images/tabletimg/headphones3x.jpg 1062w"
+                                        sizes="(min-width: 768px) 354px" type="image/jpeg">
+                                    <source srcset="./images/desktopimg/headphones1x.webp 370w,
+                                                    ./images/desktopimg/headphones2x.webp 740w,
+                                                    ./images/desktopimg/headphones3x.webp 1110w"
+                                        sizes="(min-width: 1200px) 370px" type="image/webp">
+                                    <source srcset="./images/desktopimg/headphones1x.jpg 370w,
+                                                    ./images/desktopimg/headphones2x.jpg 740w,
+                                                    ./images/desktopimg/headphones3x.jpg 1110w"
+                                        sizes="(min-width: 1200px) 370px" type="image/jpeg">
+                               
+                                <img src="./images/headphones.jpg" alt="наушники"/>
+                            </picture>
                                 <div class="portfolio__overlay">
                                     <p class="portfolio__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
@@ -264,27 +282,34 @@
                             rel="noopener noreferrer">
                             <div class="portfolio__thumb">
                                 <picture>
-                                <source srcset="./images/mobileimg/box1x.webp 450w,
-                                                ./images/mobileimg/box2x.webp 900w,
-                                                 ./images/mobileimg/box3x.webp 1350w,
-                                                ./images/tabletimg/box1x.webp 354w,
-                                                ./images/tabletimg/box2x.webp 708w,
-                                                ./images/tabletimg/box3x.webp 1062w,
-                                                ./images/desktopimg/box1x.webp 370w,
-                                                ./images/desktopimg/box2x.webp 740w,
-                                                 ./images/desktopimg/box3x.webp 1110w"
-                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw" type="img/webp">
-                                <source srcset="./images/mobileimg/box1x.jpg 450w,
-                                                 ./images/mobileimg/box2x.jpg 900w,
-                                                 ./images/mobileimg/box3x.jpg 1350w,
-                                                ./images/tabletimg/box1x.jpg 354w,
-                                                ./images/tabletimg/box2x.jpg 708w,
-                                                ./images/tabletimg/box3x.jpg 1062w,
-                                                ./images/desktopimg/box1x.jpg 370w,
-                                                ./images/desktopimg/box2x.jpg 740w,
-                                                ./images/desktopimg/box3x.jpg 1110w"
-                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw" type="img/jpg">
-                                <img src="./images/box.jpg" alt="коробки"/></picture>
+                                    <source srcset="./images/mobileimg/box1x.webp 450w,
+                                                    ./images/mobileimg/box2x.webp 900w,
+                                                    ./images/mobileimg/box3x.webp 1350w"
+                                        sizes="(max-width: 767px) 450px, 100vw" type="image/webp">
+                                    <source srcset="./images/mobileimg/box1x.jpg 450w,
+                                                    ./images/mobileimg/box2x.jpg 900w,
+                                                    ./images/mobileimg/box3x.jpg 1350w"
+                                        sizes="(max-width: 767px) 450px, 100vw" type="image/jpeg">
+                                    <source srcset="./images/tabletimg/box1x.webp 354w,
+                                                    ./images/tabletimg/box2x.webp 708w,
+                                                    ./images/tabletimg/box3x.webp 1062w"
+                                        sizes="(min-width: 768px) 354px" type="image/webp">
+                                    <source srcset="./images/tabletimg/box1x.jpg 354w,
+                                                    ./images/tabletimg/box2x.jpg 708w,
+                                                    ./images/tabletimg/box3x.jpg 1062w"
+                                        sizes="(min-width: 768px) 354px" type="image/jpeg">
+                                    <source srcset="./images/desktopimg/box1x.webp 370w,
+                                                    ./images/desktopimg/box2x.webp 740w,
+                                                    ./images/desktopimg/box3x.webp 1110w"
+                                        sizes="(min-width: 1200px) 370px" type="image/webp">
+                                    <source srcset="./images/desktopimg/box1x.jpg 370w,
+                                                    ./images/desktopimg/box2x.jpg 740w,
+                                                    ./images/desktopimg/box3x.jpg 1110w"
+                                        sizes="(min-width: 1200px) 370px" type="image/jpeg">
+
+                               
+                                <img src="./images/box.jpg" alt="коробки"/>
+                            </picture>
                                 <div class="portfolio__overlay">
                                     <p class="portfolio__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
@@ -302,27 +327,33 @@
                             rel="noopener noreferrer">
                             <div class="portfolio__thumb">
                                 <picture>
-                                <source srcset="./images/mobileimg/computer1x.webp 450w,
-                                                ./images/mobileimg/computer2x.webp 900w,
-                                                ./images/mobileimg/computer3x.webp 1350w,
-                                                ./images/tabletimg/computer1x.webp 354w,
-                                                ./images/tabletimg/computer2x.webp 708w,
-                                                ./images/tabletimg/computer3x.webp 1062w,
-                                                ./images/desktopimg/computer1x.webp 370w,
-                                                ./images/desktopimg/computer2x.webp 740w,
-                                                ./images/desktopimg/computer3x.webp 1110w"
-                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw" type="img/webp">
-                                <source srcset="./images/mobileimg/computer1x.jpg 450w,
-                                                ./images/mobileimg/computer2x.jpg 900w,
-                                                ./images/mobileimg/computer3x.jpg 1350w,
-                                                ./images/tabletimg/computer1x.jpg 354w,
-                                                ./images/tabletimg/computer2x.jpg 708w,
-                                                ./images/tabletimg/computer3x.jpg 1062w,
-                                                ./images/desktopimg/computer1x.jpg 370w,
-                                                ./images/desktopimg/computer2x.jpg 740w,
-                                                ./images/desktopimg/computer3x.jpg 1110w"
-                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw" type="img/jpg">
-                                <img src="./images/computer.jpg" alt="компьютер" /></picture>
+                                    <source srcset="./images/mobileimg/computer1x.webp 450w,
+                                                    ./images/mobileimg/computer2x.webp 900w,
+                                                    ./images/mobileimg/computer3x.webp 1350w"
+                                        sizes="(max-width: 767px) 450px, 100vw" type="image/webp">
+                                    <source srcset="./images/mobileimg/computer1x.jpg 450w,
+                                                    ./images/mobileimg/computer2x.jpg 900w,
+                                                    ./images/mobileimg/computer3x.jpg 1350w"
+                                        sizes="(max-width: 767px) 450px, 100vw" type="image/jpeg">
+                                    <source srcset="./images/tabletimg/computer1x.webp 354w,
+                                                    ./images/tabletimg/computer2x.webp 708w,
+                                                    ./images/tabletimg/computer3x.webp 1062w"
+                                        sizes="(min-width: 768px) 354px" type="image/webp">
+                                    <source srcset="./images/tabletimg/computer1x.jpg 354w,
+                                                    ./images/tabletimg/computer2x.jpg 708w,
+                                                    ./images/tabletimg/computer3x.jpg 1062w"
+                                        sizes="(min-width: 768px) 354px" type="image/jpeg">
+                                    <source srcset="./images/desktopimg/computer1x.webp 370w,
+                                                    ./images/desktopimg/computer2x.webp 740w,
+                                                    ./images/desktopimg/computer3x.webp 1110w"
+                                        sizes="(min-width: 1200px) 370px" type="image/webp">
+                                    <source srcset="./images/desktopimg/computer1x.jpg 370w,
+                                                    ./images/desktopimg/computer2x.jpg 740w,
+                                                    ./images/desktopimg/computer3x.jpg 1110w"
+                                        sizes="(min-width: 1200px) 370px" type="image/jpeg">
+                               
+                                <img src="./images/computer.jpg" alt="компьютер" />
+                            </picture>
                                 <div class="portfolio__overlay">
                                     <p class="portfolio__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                                     </p>
@@ -342,28 +373,33 @@
                             rel="noopener noreferrer">
                             <div class="portfolio__thumb">
                                 <picture>
-                                <source srcset="./images/mobileimg/edition1x.webp 450w,
-                                                ./images/mobileimg/edition2x.webp 900w,
-                                                ./images/mobileimg/edition3x.webp 1350w,
-                                                ./images/tabletimg/edition1x.webp 354w,
-                                                ./images/tabletimg/edition2x.webp 708w,
-                                                ./images/tabletimg/edition3x.webp 1062w,
-                                                ./images/desktopimg/edition1x.webp 370w,
-                                                ./images/desktopimg/edition2x.webp 740w,
-                                                ./images/desktopimg/edition3x.webp 1110w"
-                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw" type="img/webp">
-                                <source srcset="./images/mobileimg/edition1x.jpg 450w,
-                                                ./images/mobileimg/edition2x.jpg 900w,
-                                                ./images/mobileimg/edition3x.jpg 1350w,
-                                                ./images/tabletimg/edition1x.jpg 354w,
-                                                ./images/tabletimg/edition2x.jpg 708w,
-                                                ./images/tabletimg/edition3x.jpg 1062w,
-                                                ./images/desktopimg/edition1x.jpg 370w,
-                                                ./images/desktopimg/edition2x.jpg 740w,
-                                                ./images/desktopimg/edition3x.jpg 1110w"
-                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw" type="img/jpg">
-                                <img src="./images/edition.jpg" alt="издание" 
-                                     /></picture>
+                                    <source srcset="./images/mobileimg/edition1x.webp 450w,
+                                                    ./images/mobileimg/edition2x.webp 900w,
+                                                    ./images/mobileimg/edition3x.webp 1350w"
+                                        sizes="(max-width: 767px) 450px, 100vw" type="image/webp">
+                                    <source srcset="./images/mobileimg/edition1x.jpg 450w,
+                                                    ./images/mobileimg/edition2x.jpg 900w,
+                                                    ./images/mobileimg/edition3x.jpg 1350w"
+                                        sizes="(max-width: 767px) 450px, 100vw" type="image/jpeg">
+                                    <source srcset="./images/tabletimg/edition1x.webp 354w,
+                                                    ./images/tabletimg/edition2x.webp 708w,
+                                                    ./images/tabletimg/edition3x.webp 1062w"
+                                        sizes="(min-width: 768px) 354px" type="image/webp">
+                                    <source srcset="./images/tabletimg/edition1x.jpg 354w,
+                                                    ./images/tabletimg/edition2x.jpg 708w,
+                                                    ./images/tabletimg/edition3x.jpg 1062w"
+                                        sizes="(min-width: 768px) 354px" type="image/jpeg">
+                                    <source srcset="./images/desktopimg/edition1x.webp 370w,
+                                                    ./images/desktopimg/edition2x.webp 740w,
+                                                    ./images/desktopimg/edition3x.webp 1110w"
+                                        sizes="(min-width: 1200px) 370px" type="image/webp">
+                                    <source srcset="./images/desktopimg/edition1x.jpg 370w,
+                                                    ./images/desktopimg/edition2x.jpg 740w,
+                                                    ./images/desktopimg/edition3x.jpg 1110w"
+                                        sizes="(min-width: 1200px) 370px" type="image/jpeg">
+                                
+                                <img src="./images/edition.jpg" alt="издание" />
+                            </picture>
                                 <div class="portfolio__overlay">
                                     <p class="portfolio__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
@@ -381,28 +417,33 @@
                             rel="noopener noreferrer">
                             <div class="portfolio__thumb">
                                 <picture>
-                                <source srcset="./images/mobileimg/lab1x.webp 450w,
-                                                ./images/mobileimg/lab2x.webp 900w,
-                                                ./images/mobileimg/lab3x.webp 1350w,
-                                                ./images/tabletimg/lab1x.webp 354w,
-                                                ./images/tabletimg/lab2x.webp 708w,
-                                                ./images/tabletimg/lab3x.webp 1062w,
-                                                ./images/desktopimg/lab1x.webp 370w,
-                                                ./images/desktopimg/lab2x.webp 740w,
-                                                ./images/desktopimg/lab3x.webp 1110w"
-                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw" type="img/webp">
-                                <source srcset="./images/mobileimg/lab1x.jpg 450w,
-                                                ./images/mobileimg/lab2x.jpg 900w,
-                                                ./images/mobileimg/lab3x.jpg 1350w,
-                                                ./images/tabletimg/lab1x.jpg 354w,
-                                                ./images/tabletimg/lab2x.jpg 708w,
-                                                ./images/tabletimg/lab3x.jpg 1062w,
-                                                ./images/desktopimg/lab1x.jpg 370w,
-                                                ./images/desktopimg/lab2x.jpg 740w,
-                                                ./images/desktopimg/lab3x.jpg 1110w"
-                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw" type="img/jpg">
-                                <img src="./images/lab.jpg" alt="лейбл"
-                                    /></picture>
+                                    <source srcset="./images/mobileimg/lab1x.webp 450w,
+                                                    ./images/mobileimg/lab2x.webp 900w,
+                                                    ./images/mobileimg/lab3x.webp 1350w"
+                                        sizes="(max-width: 767px) 450px, 100vw" type="image/webp">
+                                    <source srcset="./images/mobileimg/lab1x.jpg 450w,
+                                                    ./images/mobileimg/lab2x.jpg 900w,
+                                                    ./images/mobileimg/lab3x.jpg 1350w"
+                                        sizes="(max-width: 767px) 450px, 100vw" type="image/jpeg">
+                                    <source srcset="./images/tabletimg/lab1x.webp 354w,
+                                                    ./images/tabletimg/lab2x.webp 708w,
+                                                    ./images/tabletimg/lab3x.webp 1062w"
+                                        sizes="(min-width: 768px) 354px" type="image/webp">
+                                    <source srcset="./images/tabletimg/lab1x.jpg 354w,
+                                                    ./images/tabletimg/lab2x.jpg 708w,
+                                                    ./images/tabletimg/lab3x.jpg 1062w"
+                                        sizes="(min-width: 768px) 354px" type="image/jpeg">
+                                    <source srcset="./images/desktopimg/lab1x.webp 370w,
+                                                    ./images/desktopimg/lab2x.webp 740w,
+                                                    ./images/desktopimg/lab3x.webp 1110w"
+                                        sizes="(min-width: 1200px) 370px" type="image/webp">
+                                    <source srcset="./images/desktopimg/lab1x.jpg 370w,
+                                                    ./images/desktopimg/lab2x.jpg 740w,
+                                                    ./images/desktopimg/lab3x.jpg 1110w"
+                                        sizes="(min-width: 1200px) 370px" type="image/jpeg">
+                                
+                                <img src="./images/lab.jpg" alt="лейбл"/>
+                            </picture>
                                 <div class="portfolio__overlay">
                                     <p class="portfolio__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
@@ -420,30 +461,33 @@
                             rel="noopener noreferrer">
                             <div class="portfolio__thumb">
                                 <picture>
-                            <source
-                                srcset="./images/mobileimg/business1x.webp 450w,
-                                         ./images/mobileimg/business2x.webp 900w,
-                                         ./images/mobileimg/business3x.webp 1350w,
-                                         ./images/tabletimg/business1x.webp 354w,
-                                         ./images/tabletimg/business2x.webp 708w,
-                                         ./images/tabletimg/business3x.webp 1062w,
-                                         ./images/desktopimg/business1x.webp 370w,
-                                         ./images/desktopimg/business2x.webp 740w,
-                                         ./images/desktopimg/business3x.webp 1110w"
-                                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw" type="img/webp">
-                            <source
-                                srcset="./images/mobileimg/business1x.jpg 450w,
-                                        ./images/mobileimg/business2x.jpg 900w,
-                                         ./images/mobileimg/business3x.jpg 1350w,
-                                        ./images/tabletimg/business1x.jpg 354w,
-                                        ./images/tabletimg/business2x.jpg 708w,
-                                         ./images/tabletimg/business3x.jpg 1062w,
-                                         ./images/desktopimg/business1x.jpg 370w,
-                                         ./images/desktopimg/business2x.jpg 740w,
-                                         ./images/desktopimg/business3x.jpg 1110w"
-                                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw" type="img/jpg">
-                                <img src="./images/business.jpg" alt="руки на нетбуке"
-                                     /></picture>
+                                <source srcset="./images/mobileimg/business1x.webp 450w,
+                                                ./images/mobileimg/business2x.webp 900w,
+                                                ./images/mobileimg/business3x.webp 1350w"
+                                    sizes="(max-width: 767px) 450px, 100vw" type="image/webp">
+                                <source srcset="./images/mobileimg/business1x.jpg 450w,
+                                                ./images/mobileimg/business2x.jpg 900w,
+                                                ./images/mobileimg/business3x.jpg 1350w"
+                                    sizes="(max-width: 767px) 450px, 100vw" type="image/jpeg">
+                                <source srcset="./images/tabletimg/business1x.webp 354w,
+                                                ./images/tabletimg/business2x.webp 708w,
+                                                ./images/tabletimg/business3x.webp 1062w"
+                                    sizes="(min-width: 768px) 354px" type="image/webp">
+                                <source srcset="./images/tabletimg/business1x.jpg 354w,
+                                                ./images/tabletimg/business2x.jpg 708w,
+                                                ./images/tabletimg/business3x.jpg 1062w"
+                                    sizes="(min-width: 768px) 354px" type="image/jpeg">
+                                <source srcset="./images/desktopimg/business1x.webp 370w,
+                                                ./images/desktopimg/business2x.webp 740w,
+                                                ./images/desktopimg/business3x.webp 1110w"
+                                    sizes="(min-width: 1200px) 370px" type="image/webp">
+                                <source srcset="./images/desktopimg/business1x.jpg 370w,
+                                                ./images/desktopimg/business2x.jpg 740w,
+                                                ./images/desktopimg/business3x.jpg 1110w"
+                                    sizes="(min-width: 1200px) 370px" type="image/jpeg">
+                           
+                                <img src="./images/business.jpg" alt="руки на нетбуке"/>
+                            </picture>
                                 <div class="portfolio__overlay">
                                     <p class="portfolio__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>

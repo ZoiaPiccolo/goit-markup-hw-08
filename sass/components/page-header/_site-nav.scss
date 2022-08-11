@@ -11,13 +11,17 @@
     }
 }
 
-.site-nav__item{
+.site-nav{
     @media screen and (max-width: $mob-only) {
-            font-size: 40px;
-            line-height: 1.17;
-            &:not(:last-child){
-                margin-bottom: 32px;
-            }
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+
+      &__item{
+    font-size: 40px;
+    line-height: 1.17;
+      }
+           
         }
     }
 
@@ -34,7 +38,7 @@
 
 @media screen and (max-width: $mob-only){
     .site-nav{
-       margin-bottom: 306px;
+       
     }
 }
 

@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
     @media screen and (max-width: $mob-only){
         .footer__socials{
             margin-bottom: 60px;
@@ -10,9 +11,7 @@
     }
 }
 
-.socials__item:not(:first-child) {
-     margin-left: 10px;
-}
+
 
 .socials__link {
     @extend %link;

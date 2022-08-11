@@ -1,4 +1,5 @@
 .footer {
+   
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: $accent-background-color;
@@ -46,55 +47,47 @@
     color: $secondary-text-color;
     text-transform: uppercase;
 }
+ @media screen and (max-width: 1199px){
+    .footer__content {
+            text-align: center;
+        }
+ }
+
 
 @media screen and (max-width: $mob-only) {
-    .footer__list {
-        text-align: center;
-    }
-
-   .footer__slogan{
-    margin-top: 60px;
+   .footer__content{
+    margin-bottom: 60px;
    }
 }
 
 @media screen and (max-width: 1199px){
-    .footer__list{
-        margin-bottom: 60px;
-    }
+    
 
     .footer__item:not(:last-child){
         margin-bottom: 8px;
     }
-
-    .footer__slogan{
+     .footer__slogan{
         text-align: center;
-    }
-}
-
-
- @media screen and (min-width: $tab) and (max-width: 1199px){
-    .footer__slogan {
+     }
+        .footer__content {
         text-align: center;
+            }
     }
-}
 
- 
 
- @media screen and (min-width: $tab) {
+@media screen and (min-width: $tab) and (max-width: 1199px){
     .footer__menu {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        gap: 165px;
        }
     }
 
- @media screen and (min-width: $tab) and (max-width:1199px){
-    .footer__list{
-       padding-left: 61px;
-       text-align: center;
-    }
-
-     .footer__content--socials {
-            padding-right: 74px;
+ @media screen and (min-width: $tab) and (max-width: 1199px){
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+        row-gap: 60px;
     }
  }
 
@@ -106,12 +99,17 @@
     .footer-container {
         display: flex;
         align-items: baseline;
-       
-    }
+        width: 100%;
+        }
+
+        .footer__menu{
+            display: flex;
+            align-items: baseline;
+            gap: 70px;
+        }
+        
         .footer__item {
              margin-bottom: 9px;
         }
-        .footer__content--socials {
-            margin-left: 70px;
-        }
+        
 }

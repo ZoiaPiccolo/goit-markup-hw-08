@@ -18,22 +18,27 @@
     .address-list__icon {
         display: none;
     }
-        .address-list__item:first-child {
-            margin-bottom: 32px;
-            font-size: 34px;
-            line-height: calc(40 / 34);
-    }
-    
-        .address-list__item:last-child {
-            font-size: 24px;
-            line-height: calc(28 / 24);
+
+    .address-list{
+        margin-bottom: 64px;
+
+        &__item:first-child{
+        margin-bottom: 32px;
+        font-size: 34px;
+        line-height: calc(40 / 34);
         }
 
- }
+        &__item:last-child{
+        font-size: 24px;
+        line-height: calc(28 / 24);
+        }
+    }
+        
+}
 
-        @media screen and (min-width: $tab){
+        @media screen and (min-width: $tab) and (max-width: 1199px){
     .address-list{
-    margin-left: 96px;
+    margin-left: auto;
     font-size: 12px;
     line-height: calc(14 / 12);
 
@@ -56,9 +61,12 @@
     .address-list {
         display: flex;
         gap: 30px;
-        margin-left: 315px;
+        margin-left: auto;
+        font-size: 14px;
+        line-height: calc(16 / 14);
 
         &__item {
+            
             align-items: center;
         }
     

@@ -4,9 +4,6 @@
     color: $accent-color;
     
     &::after {
-        @media screen and (max-width: $mob-only) {
-                display: none;
-            }
             position: absolute;
             bottom: -1px;
             display: block;
@@ -16,4 +13,9 @@
             border-radius: 2px;
             background-color: $accent-color;
         }
+}
+@media screen and (max-width: $mob-only){
+    .current-link::after{
+    display: none;
+    }
 }

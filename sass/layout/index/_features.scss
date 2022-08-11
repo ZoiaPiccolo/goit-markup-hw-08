@@ -37,8 +37,10 @@
 }
 
 @media screen and (max-width: $mob-only){
-    .feature__item:not(:last-child){
-        margin-bottom: 30px;
+    .feature__list{
+       display: flex;
+       flex-direction: column;
+       gap: 30px;
     }
    .feature__title {
     text-align: center;
@@ -54,9 +56,7 @@
         @include flex-basis(2);
     }
 
-    .feature__item:nth-child(-n+2) {
-        margin-bottom: $set-gap;
-    }
+    
 }
 
 @media screen and (min-width: $desk) {
