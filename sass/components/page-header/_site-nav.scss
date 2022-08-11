@@ -36,11 +36,7 @@
     }
 }
 
-@media screen and (max-width: $mob-only){
-    .site-nav{
-       
-    }
-}
+
 
 @media screen and (min-width: $tab) {
     .site-nav{
@@ -58,9 +54,3 @@
     }
 }
 
-@media screen and (min-width: $desk){
-    .site-nav__link {
-        padding-top: 32px;
-        padding-bottom: 32px;
-    }
-}

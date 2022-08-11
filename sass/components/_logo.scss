@@ -4,6 +4,8 @@
     font-weight: 700;
     letter-spacing: 0.03em;
     color: $accent-color;
+    font-size: 24px;
+    line-height: calc(28 / 24);
 
     &--white{
         color: $secondary-text-color;
@@ -16,19 +18,18 @@
 }
 
 .footer__logo {
-    // display: flex;
+   
     display: block;
     margin-bottom: 20px;
-    font-size: 24px;
-    line-height: calc(28 / 24);
+    
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $mob-only) {
         text-align: center;
     }
 }
 
 .header__logo {
-    @media screen and (max-width: 767px){
+    @media screen and (max-width: $mob-only){
         padding-top: 16px;
         padding-bottom: 16px;
     }
@@ -42,12 +43,7 @@
     }
 }
 
- @media screen and (max-width: 1199px) {
-    .header__logo {
-        font-size: 24px;
-        line-height: calc(28 / 24);
-    }
- }
+ 
 
 
 
@@ -63,11 +59,8 @@
     }
  }
 
- @media screen and (min-width: $desk){
-    .footer__logo {
-        padding: 0;
-    }
- }
+
+ 
 
 
 

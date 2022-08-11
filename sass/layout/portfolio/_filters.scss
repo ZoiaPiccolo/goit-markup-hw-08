@@ -40,15 +40,11 @@
      
  }
 
-@media screen and (max-width: $mob-only) {
-   
-    
-}
+
 
 @media screen and (min-width: $tab){
     .filters__list {
         justify-content: center;
-        gap: 8px;
         margin-bottom: $set-gap;
     }
 }

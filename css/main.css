@@ -202,6 +202,8 @@ p {
   font-weight: 700;
   letter-spacing: 0.03em;
   color: #2196F3;
+  font-size: 24px;
+  line-height: 1.1666666667;
 }
 .logo--white {
   color: #FFFFFF;
@@ -213,8 +215,6 @@ p {
 .footer__logo {
   display: block;
   margin-bottom: 20px;
-  font-size: 24px;
-  line-height: 1.1666666667;
 }
 @media screen and (max-width: 767px) {
   .footer__logo {
@@ -237,12 +237,6 @@ p {
   }
 }
 
-@media screen and (max-width: 1199px) {
-  .header__logo {
-    font-size: 24px;
-    line-height: 1.1666666667;
-  }
-}
 @media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;
@@ -252,11 +246,6 @@ p {
     padding-top: 24px;
     padding-bottom: 25px;
     margin-right: 93px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer__logo {
-    padding: 0;
   }
 }
 @media screen and (max-width: 767px) {
@@ -307,12 +296,6 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .site-nav__link {
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -910,7 +893,6 @@ p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    gap: 8px;
     margin-bottom: 30px;
   }
 }
@@ -1118,9 +1100,6 @@ p {
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1);
     min-width: 528px;
