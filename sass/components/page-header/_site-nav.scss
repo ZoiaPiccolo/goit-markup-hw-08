@@ -35,9 +35,6 @@
         color: $accent-color;
     }
 }
-
-
-
 @include mq(tab) {
     .site-nav{
         display: flex;
