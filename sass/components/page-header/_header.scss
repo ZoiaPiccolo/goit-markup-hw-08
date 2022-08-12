@@ -23,3 +23,20 @@
         line-height: 1.14;
     }
 }
+
+@include mq(tab){
+    .header{
+        position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+
+            &.no-transparency{
+                background-color: rgba(245, 237, 237, 0.3);
+                backdrop-filter: blur(10px);
+                border-bottom: none;
+            }
+           
+    }
+}

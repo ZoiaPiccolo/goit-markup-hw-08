@@ -54,7 +54,12 @@
     }
 }
 }  
-
+@include mq(tab){
+     .no-transparency .address-list__link{
+        color: $logo-title-color;
+        transition: color $transition;
+     }
+}
 
 
 @include mq(desk) {

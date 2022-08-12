@@ -47,6 +47,10 @@
         justify-content: center;
         margin-bottom: $set-gap;
     }
+
+    .filters{
+        margin-top: 80px;
+    }
 }
 
 @include mq(desk) {
